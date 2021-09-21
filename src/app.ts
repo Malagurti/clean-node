@@ -19,3 +19,4 @@ export function CreateOrder (totalOrderedItens:number, invoiceCpf:String, total:
         console.log("Erro no envio da Ordem")
     }
 }
+CreateOrder(totalOrderedItens,invoiceCpf,total,discount)
