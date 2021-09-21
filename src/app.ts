@@ -4,7 +4,7 @@ export const total = 200.3
 export const discount = 20
 export const discountToken = true
 
-function CreateOrder (totalOrderedItens:number, invoiceCpf:String, total:number, discount:number){
+export function CreateOrder (totalOrderedItens:number, invoiceCpf:String, total:number, discount:number){
     if (discountToken){
         const totalOrderPrice = (total-(((total)) * discount/100))
         const order = {
@@ -19,4 +19,3 @@ function CreateOrder (totalOrderedItens:number, invoiceCpf:String, total:number,
         console.log("Erro no envio da Ordem")
     }
 }
-CreateOrder(totalOrderedItens, invoiceCpf, total, discount)
